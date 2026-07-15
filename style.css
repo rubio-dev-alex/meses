@@ -1,0 +1,185 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0003;
+    /* Fondo oscuro intenso para que contrasten los colores */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Pantalla de Inicio */
+.seccion-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #4a000e 0%, #0f0003 100%);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* El Corazón Palpitante */
+.contenedor-corazon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: latido 1.2s infinite;
+}
+
+.corazon {
+    background-color: #ff003c;
+    /* Rojo intenso y brillante */
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 100px;
+    box-shadow: 0 0 40px #ff003c;
+}
+
+.corazon:before,
+.corazon:after {
+    content: "";
+    background-color: #ff003c;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+.corazon:before {
+    top: -50px;
+    left: 0;
+}
+
+.corazon:after {
+    top: 0;
+    left: 50px;
+}
+
+/* Animación de Latido */
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.15);
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.texto-aniversario {
+    margin-top: 80px;
+    font-size: 2.2rem;
+    color: #ff3366;
+    /* Rosa neón intenso */
+    text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c;
+    max-width: 80%;
+}
+
+.click-instruccion {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ffb3c1;
+    letter-spacing: 2px;
+}
+
+/* Contenido de la Historia (Oculto al inicio) */
+.oculto {
+    display: none;
+}
+
+#contenido-historia {
+    background: linear-gradient(180deg, #2b000a 0%, #0f0003 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff003c;
+    text-shadow: 0 0 15px #ff003c;
+    margin-bottom: 10px;
+}
+
+/* Galería de Fotos */
+.galeria {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.galeria h2,
+.seccion-video h2 {
+    color: #ff3366;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid-fotos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff003c;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff003c;
+}
+
+/* Sección de Video */
+.seccion-video {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.reproductor-video video {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #ff3366;
+    box-shadow: 0 0 20px rgba(255, 51, 102, 0.4);
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 1.2rem;
+    color: #ffb3c1;
+}
+
+.container-carta {
+    align-items: baseline;
+    display: grid;
+
+    font-family: cursive;
+    height: 90%;
+    width: 90%;
+    background-color: #2b000a;
+}

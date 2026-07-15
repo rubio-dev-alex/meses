@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - 9 Meses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio de fondo oculto (se activa al interactuar) -->
+    <audio id="musica-fondo" loop>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- PÁGINA DE INICIO: El Corazón Palpitante -->
+    <section id="pantalla-inicio" class="seccion-inicio">
+        <div class="contenedor-corazon" onclick="iniciarExperiencia()">
+            <div class="corazon"></div>
+            <h1 class="texto-aniversario">9 meses de haber encontrado la felicidad</h1>
+            <p class="click-instruccion">Haz clic y te enseñare mi mundo</p>
+        </div>
+    </section>
+
+    <!-- PÁGINA PRINCIPAL: La Historia (Se revela al hacer clic) -->
+    <main id="contenido-historia" class="oculto">
+        <header>
+            <h1>Nuestra Historia de Amor ❤️</h1>
+            <p>El viaje más hermoso de mi vida</p>
+        </header>
+
+        <!-- Galería de Imágenes -->
+        <section class="galeria">
+            <h2>Nuestros Momentos</h2>
+            <div class="grid-fotos">
+                <img src="/assets/imagenes/1.jpeg" alt="Momento 1">
+                <img src="/assets/imagenes/2.jpeg" alt="Momento 2">
+                <img src="/assets/imagenes/3.jpeg" alt="Momento 3">
+                <img src="/assets/imagenes/4.jpeg" alt="Momento 4">
+                <img src="/assets/imagenes/5.jpeg" alt="Momento 5">
+                <img src="/assets/imagenes/6.jpeg" alt="Momento 6">
+                <img src="/assets/imagenes/7.jpeg" alt="Momento 7">
+                <img src="/assets/imagenes/8.jpeg" alt="momento 8">
+                <img src="/assets/imagenes/9.jpeg" alt="momento 9">
+                <img src="/assets/imagenes/10.jpeg" alt="momento 10">
+                <img src="/assets/imagenes/11.jpeg" alt="momento 11">
+                <img src="/assets/imagenes/12.jpeg" alt="momento 12">
+
+            </div>
+        </section>
+
+        <!-- Sección de Video -->
+        <section class="seccion-video">
+            <h2>Un recuerdo en movimiento</h2>
+            <div class="reproductor-video">
+                <video controls style="width: 40%;" height="40%">
+                    <source src="/assets/video/WhatsApp Video 2026-07-15 at 1.14.30 PM.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>Un par de palabras <br><a href="/carta.html">...</a></h3>
+             
+            </div>
+        </section>
+
+        <footer>
+            <p>Y esto es solo el comienzo... ¡Te amo!</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
